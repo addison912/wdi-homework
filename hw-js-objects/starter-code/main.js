@@ -52,6 +52,10 @@ for (let i = 0; i < animals.length; i++) {
   animals[i].makeNoise();
 }
 
+// animals.forEach(i => {
+//   animals[i].makeNoise();
+// });
+
 /*
 	Part 3: Let's see how hungry these animals get by adding a "hunger" property to them.
 	Use a for-loop to iterate through the array of animals and add a "hunger" property with
@@ -63,9 +67,13 @@ for (let i = 0; i < animals.length; i++) {
 	myObject['newPropertyName'] = newValue;
 */
 
-for (let i = 0; i < animals.length; i++) {
+// for (let i = 0; i < animals.length; i++) {
+//   animals[i].hunger = 10;
+// }
+
+animals.forEach(i => {
   animals[i].hunger = 10;
-}
+});
 
 /*
 	Part 4: These animals should be able to walk. Let's add a new "walk" property to them.
@@ -92,7 +100,7 @@ for (let i = 0; i < animals.length; i++) {
     this.hunger--;
   };
 }
-
+dog.walk();
 /*
 	Part 5: Now these animals can walk and talk by themselves, but they're quite lonely.
 	Let's add a "makeFriend" property to each animal. The "makeFriend" property will be a
@@ -115,12 +123,19 @@ for (let i = 0; i < animals.length; i++) {
 	// => "chirp quack"
 */
 
-for (let i = 0; i < animals.length; i++) {
-  animals[i].makeFriend = function(animal) {
+// for (let i = 0; i < animals.length; i++) {
+//   animals[i].makeFriend = function(animal) {
+//     this.friend = animal;
+//     console.log(`${this.name} made a friend!`);
+//   };
+// }
+
+animals.forEach(i => {
+  animals[i].makeFriend = animal => {
     this.friend = animal;
     console.log(`${this.name} made a friend!`);
   };
-}
+});
 
 /* BONUS
 This bonus will be a challenge! To complete this step, you'll need to do some Googling to look up things that have not yet been covered.
