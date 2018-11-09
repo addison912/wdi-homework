@@ -11,7 +11,7 @@ class player {
     console.log;
     switch (key) {
       case this.keys[0]:
-        if (this.position[1] > 270) {
+        if (this.position[1] > 200) {
           this.position[1] -= 10;
         }
         break;
@@ -61,7 +61,7 @@ chicken = new player(
   "chicken",
   [200, 350],
   5,
-  [87, 68, 83, 65, 16],
+  [87, 68, 83, 65, 32],
   document.getElementById("chicken")
 );
 
