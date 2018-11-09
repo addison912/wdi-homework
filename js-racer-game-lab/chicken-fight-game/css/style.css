@@ -9,7 +9,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Bangers", cursive;
+  font-family: "Bangers", monospace;
 }
 
 .player {
@@ -26,11 +26,41 @@ body {
 h2 {
   width: 300px;
   color: white;
-  text-transform: uppercase;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   line-height: 1.25;
+  font-size: 25px;
 }
 
 span {
   color: yellow;
+  font-size: 30px;
+  padding: 0 3px;
+}
+
+button:focus {
+  outline: none;
+}
+
+#start {
+  font-family: "Bangers", monospace;
+  font-size: 50px;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  padding: 15px 18px 15px 10px;
+  background-color: rgb(136, 231, 255);
+  align-self: flex-start;
+  border: solid #333 2px;
+  margin: 12px;
+}
+
+#start:hover {
+  cursor: pointer;
+}
+
+#peter {
+  display: none;
+}
+
+#chicken {
+  display: none;
 }
