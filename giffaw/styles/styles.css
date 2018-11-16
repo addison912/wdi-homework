@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: black;
+}
+
+img {
+  height: 100px;
+}
+
+.gif-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
